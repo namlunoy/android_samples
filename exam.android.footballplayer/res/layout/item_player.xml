@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgAva"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/ava_messi" />
+
+    <ImageView
+        android:id="@+id/img_flag"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/ar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/img_flag"
+        android:layout_toRightOf="@id/imgAva"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leo Messi"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1985-05-20"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>
